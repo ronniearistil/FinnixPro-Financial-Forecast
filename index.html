@@ -1,69 +1,121 @@
 <!DOCTYPE html>
-<!-- saved from url=(0071)file:///Users/ronyaristil/Desktop/FinnixPro%20Financial%20Forecast.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>FinnixPro Financial Forecast</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 40px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .financial-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 14px;
-            background-color: #fff;
-        }
-        .financial-table th, .financial-table td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: right;
-        }
-        .financial-table th {
-            background-color: #333;
-            color: white;
-        }
-        .financial-table .section-header {
-            text-align: left;
-            font-weight: bold;
-            background-color: #e0e0e0;
-        }
-        .financial-table .total-row td {
-            font-weight: bold;
-            background-color: #e8f5e9;
-            border-top: 2px solid #333;
-        }
-        .negative {
-            color: #c00;
-        }
-    </style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FinnixPro Financial Forecast</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      color: #004d4d;
+      font-size: 28px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    thead th {
+      background-color: #008080;
+      color: white;
+    }
+    .section {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      text-align: left;
+    }
+    .total {
+      background-color: #e0f5f2;
+      font-weight: bold;
+    }
+    .footer-note {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #444;
+    }
+    .highlight {
+      color: #008080;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <h1>FinnixPro Financial Forecast</h1>
-    <table class="financial-table">
-        <thead>
-            <tr>
-                <th>FinnixPro Financial Forecast</th>
-                <th>M1</th><th>M2</th><th>M3</th><th>M4</th><th>M5</th><th>M6</th>
-                <th>Y1 Total (2025)</th><th>Y2 (2026)</th><th>Y3 (2027)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td colspan="10" class="section-header">Revenue</td></tr>
-            <tr><td>Paid Teams</td><td>2</td><td>4</td><td>6</td><td>10</td><td>15</td><td>20</td><td>50</td><td>265</td><td>1,250</td></tr>
-            <tr><td>Monthly Recurring Revenue (MRR)</td><td>$100</td><td>$250</td><td>$450</td><td>$1,000</td><td>$2,500</td><td>$4,000</td>
-                <td>$40,150</td><td>$457,000</td><td>$1,490,000</td>
-            </tr>
-            <tr class="total-row"><td>Total Annual Revenue</td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td>$77,400</td><td>$5,484,000</td><td>$17,880,000</td>
-            </tr>
-        </tbody>
-    </table>
 
+<h1>FinnixPro Financial Forecast</h1>
 
-</body></html>
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Users</th>
+      <th>Free</th>
+      <th>Starter</th>
+      <th>Pro</th>
+      <th>Premium</th>
+      <th>Enterprise</th>
+      <th>Monthly Rev</th>
+      <th>Annual Rev</th>
+      <th>Burn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="section">2025</td>
+      <td>1,000</td>
+      <td>200</td>
+      <td>250</td>
+      <td>300</td>
+      <td>200</td>
+      <td>50</td>
+      <td>$64K</td>
+      <td>$774K</td>
+      <td>$300K</td>
+    </tr>
+    <tr>
+      <td class="section">2026</td>
+      <td>5,000</td>
+      <td>500</td>
+      <td>1,000</td>
+      <td>1,500</td>
+      <td>1,200</td>
+      <td>500</td>
+      <td>$457K</td>
+      <td>$5.5M</td>
+      <td>$600K</td>
+    </tr>
+    <tr class="total">
+      <td class="section">2027</td>
+      <td>12,000</td>
+      <td>600</td>
+      <td>2,500</td>
+      <td>3,000</td>
+      <td>3,000</td>
+      <td>2,400</td>
+      <td>$1.49M</td>
+      <td>$17.9M</td>
+      <td>$900K</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="footer-note">
+  Revenue assumptions based on blended pricing tiers: <span class="highlight">Starter ($10/seat)</span>,
+  <span class="highlight">Pro ($29/seat)</span>, <span class="highlight">Premium ($49/seat)</span>, and
+  <span class="highlight">Enterprise (~$500 avg)</span>. Paid conversion improves from ~50% to ~70% over time.
+  Premium assumes 3 seats per user. Enterprise accounts contribute 60%+ of ARR by 2027.
+</p>
+
+</body>
+</html>
